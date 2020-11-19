@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" integrity="sha256-sxzrkOPuwljiVGWbxViPJ14ZewXLJHFJDn0bv+5hsDY=" crossorigin="anonymous" />
+    <style>
+        html, body {
+            width: 100%;
+        }
+
+        .header {
+            font-size: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background: black;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .menu li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 0 50px;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+        }
+
+        .menu li a {
+            color: white;
+        }
+
+            .menu li a:hover {
+                color: gray;
+            }
+
+        .content div {
+            height: 1000px;
+            width: 100%;
+        }
+
+            .content div:nth-child(1) {
+                background: green;
+            }
+
+            .content div:nth-child(2) {
+                background: blue;
+            }
+
+            .content div:nth-child(3) {
+                background: red;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#one">Один</a></li>
+            <li><a href="#two">Два</a></li>
+            <li><a href="#three">Три</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div><a name="one"><br></a><p>Контент первоfjfyjй страницы</p></div>
+        <div><a name="two"><br></a><p>Контент второй страницы</p></div>
+        <div><a name="three"><br></a><p>Контент третьей страницы</p></div>
+    </div>
+</body>
+</html>
